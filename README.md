@@ -54,6 +54,28 @@ Stakeholder: XYZ
 Data Analyzing
 MySQL was used to analyze data.
 
--- KPI’s REQUIREMENT --
+-- KPI’s REQUIREMENT --  
+#Q1  
+WITH cte22 AS(SELECT '2022' AS year,  
+country_territory AS country, population_2022 AS population  
+FROM world_population  
+ORDER BY population_2022 DESC LIMIT 3),  
+cte10 AS(  
+SELECT '2010' AS year, country_territory AS country, population_2010 AS population  
+FROM world_population  
+ORDER BY population_2010 DESC LIMIT 3),  
+cte00 AS(  
+SELECT '2000' AS year, country_territory AS country, population_2000 AS population  
+FROM world_population  
+ORDER BY population_2000 DESC LIMIT 3),  
+cte80 AS(  
+SELECT '1980' AS year, country_territory AS country, population_1980 AS population  
+FROM world_population  
+ORDER BY population_1980 DESC LIMIT 3)  
+
+SELECT * FROM cte80 UNION  
+SELECT * FROM cte00 UNION  
+SELECT * FROM cte10 UNION  
+SELECT * FROM cte22  
 ## 5. SHARE
 ## 6. ACT
