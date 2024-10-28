@@ -2,7 +2,7 @@
 Analyze the World Population Dataset to uncover trends in population growth, regional distributions, and demographic changes across different countries, enabling insights into global population dynamics for informed decision-making and policy development.  
 
 ## 1. ASK  
-Stakeholder: Maven (Manager)
+Stakeholder: XYZ
 
 ### Questions:  
 - Top 3 Countries with the Highest Population  
@@ -46,3 +46,14 @@ Stakeholder: Maven (Manager)
 
 - Population Density of All Countries Across Census Years    
   Analyze the population density of every country over all available census years. How densely populated are different regions of the world?
+
+  
+## 2. PREPARE
+## 3. PROCESS
+## 4. ANALYZE  
+Data Analyzing
+MySQL was used to analyze data.
+
+-- KPI’s REQUIREMENT --
+## 5. SHARE
+## 6. ACT
